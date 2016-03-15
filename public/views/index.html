@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="UTF-8">
+<title>Casa Del Rio</title>
+<base href="/">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- CSS --><!-- Bootstrap (Framework) -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<!-- Full Screen Background Slides -->
+<link rel="stylesheet" href="js/superslides/superslides.css">
+
+<!-- Lightbox -->
+<link href='js/simplelightbox/simplelightbox.css' rel='stylesheet' type='text/css'>
+
+<!-- Timepicker -->
+<link rel="stylesheet" href="js/jquery-timepicker/jquery.timepicker.css">
+
+<!-- Datepicker -->
+<link rel="stylesheet" href="js/bootstrap-datepicker/bootstrap-datepicker.css">
+
+<!-- Masonry grid Layout -->
+<link rel="stylesheet" href="js/jQuery-flexImages/jquery.flex-images.css">
+
+<!-- Off Canvas Navigation -->
+<link type="text/css" href="js/pushy/pushy.css" rel="stylesheet" />
+
+<!-- Main Style Sheet -->
+ <link rel="stylesheet" href="css/assets/main.css"> <!-- custom styles -->
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="/components/jquery/jquery.js"></script>
+<script src="/components/angular/angular.js"></script>
+
+<!-- ANGULAR CUSTOM -->
+<script src="js/controllers/MainCtrl.js"></script>
+<script src="js/controllers/UserCtrl.js"></script>
+<script src="js/services/UserService.js"></script>
+<script src="js/appRoutes.js"></script>
+<script src="js/app.js"></script>
+
+</head>
+
+<body ng-app="casaApp" ng-controller="UserController">
+    <!-- Preloader
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Off canvas menu starts -->
+    <div class="off-canvas-menu">
+        <a class="menu-btn" id="hamburger"><span></span></a>
+        <nav class="pushy pushy-right main-menu">
+            <a class="close-btn menu-btn"><i class="icon icon-cross"></i></a>
+            <a class="brand" href="/"><img id="logo" src="css/assets/images/CDRlogo.png" class="img-responsive"></a>
+            <ul class="list-unstyled menu-items" id="menu-items">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about"><i class="about"></i>About us</a></li>
+                <li><a href="#our-menu"><i class="our-menu"></i>Our Menu</a></li>
+                <li><a href="#gallery"><i class="gallery"></i>Gallery</a></li>
+                <li><a href="#blog"><i class="blog"></i>Blog</a></li>
+                <li><a href="#reservations"><i class="reservations"></i>Reservations</a></li>
+                <li><a href="#contact"><i class="contact"></i>Contact</a></li>
+                <li><a href="/users"><i class="admin"></i>ADMIN</a></li>
+            </ul>
+
+            <div class="social clearfix">
+                <a href=""><i class="icon icon-facebook"></i></a>
+                <a href=""><i class="icon icon-twitter"></i></a>
+                <a href=""><i class="icon icon-instagram"></i></a>
+                <a href=""><i class="icon icon-yelp"></i></a>
+
+            </div>
+        </nav>
+    </div> <!-- Off canvas menu ends -->
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main body starts -->
+    <div class="container" max-width="100%">
+
+        <!-- ANGULAR DYNAMIC CONTENT -->
+        <div id="main">
+                <!-- angular templating -->
+                <!-- this is where content will be injected -->
+
+            <div ng-view></div>
+
+        </div>
+
+    </div>
+<!-- Javascripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Jquery library -->
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script> 
+
+<!-- Bootstrap (Framework) -->
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<!-- Full Screen Background Slides -->
+<script src="js/superslides/jquery.superslides.min.js"></script>
+
+ <!-- Lightbox -->
+<script src="js/simplelightbox/simple-lightbox.min.js"></script>
+
+<!-- Datepicker -->
+<script src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+<!-- Timepicker -->
+<script src="js/jquery-timepicker/jquery.timepicker.min.js"></script>
+
+<!-- Masonry grid Layout -->
+<script src="js/jQuery-flexImages/jquery.flex-images.min.js"></script>
+
+<!-- Off Canvas Navigation -->
+<script type="text/javascript" src="js/pushy/pushy.js"></script>
+
+<!-- Smooth one page scroll -->
+<script src="js/jquery-one-page-nav/jquery.nav.js"></script>
+
+<!-- Google Map -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<!-- Prasto plugins -->
+<script src="js/main.js"></script>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
