@@ -1,7 +1,98 @@
-<div class="jumbotron text-center">
-	
-	<h1>Casa Del Rio Reservations with OpenTable</h1>
+<!-- Reservation section starts -->
+<section id="reservation" class="clearfix reservation">
+    <div class="reserve-header">
+        <div class="container">
+            <div class="col-sm-6 f-n center-block">
+                <h2>Make a reservation</h2>
+                <p>Join us nightly, on South Pantano Road. Before dinner, enjoy a Margarita and warm fresh chips and house made quacamole in our Cantina. Signature dishes are the Chimichangas (the best in Tucson), fajitas, chile rellenos, green and red chile con carne, and Tucson's best fresh salsa made daily!.  Come by and unwind over margaritas and great food. </p>
+            </div>
+        </div>
+    </div>
 
-	<p>{{ tagline }}</p>
+    <div class="container reservation-container">
+        <div class="row">
+            <!-- Reservation form starts -->
+            <div class="col-md-5 reservation-form">
+                <form class="form-custom">
+                    <div class="form-group">
+                        <label class="sr-only" for="name">Name</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon icon-user"></i></div>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                    </div>
 
-</div>
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon icon-envelope"></i></div>
+                            <input type="text" class="form-control" id="email" placeholder="Email address">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="phone">Phone</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon icon-phone"></i></div>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="picktime">Select time</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon icon-clock"></i></div>
+                            <input type="text" class="form-control" id="picktime" placeholder="Select time">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="pickdate">Select date</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="icon icon-date"></i></div>
+                            <input type="text" class="form-control" id="pickdate" placeholder="Select date">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-primary ">Find a table</button>
+                </form>
+            </div> <!-- Reservation form ends -->
+            <hr class="visible-sm">
+
+            <!-- Opening hours starts -->
+            <div class="col-md-4 col-md-offset-2">
+                <div class="opening-hours">
+                    <div class="frame">
+                        <h2>Opening Hours</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Monday & Tuesday</p>
+                                <p>11:00 AM - 9:00 PM</p>
+                            </li>
+                            <li>
+                                <p>Wednesday & Thursday</p>
+                                <p>11:00 AM - 9:00 PM</p>
+                            </li>
+                            <li>
+                                <p>Friday & Saturday</p>
+                                <p>11:00 AM - 10:00pm</p>
+                            </li>
+                            <li>
+                                <p>Sunday</p>
+                                <p>11:00 AM - 8:00 PM</p>
+                            </li>
+                            <li> 
+                                <p>HAPPY HOUR AT THE CANTINA!</p> 
+                                <p>Monday thru Friday 3:00pm - 7:00pm</p>
+                                <p>Beers on Tap, House Margaritas, & Well Drinks</p>
+                                <p>Happy Hour Cantina Menu</p>
+                            </li>
+                            <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- Opening hours ends -->
+        </div>
+    </div>
+</section> 
+<!-- Reservation section ends -->
