@@ -1,30 +1,31 @@
 <!-- Our Menu section starts -->
 <section id="our-menu">
-    <div class="container">
+    <div class="container" data-ng-app="casaApp">
         <h2>Our Menu</h2>                  
         <div class="menu-table">
             <!-- Menu tabs -->
+            <div ng-controller="OurMenuController">
             <ul class="nav nav-tabs  menu-tabs" role="tablist">
                 <li class="active">
-                    <a href="#soups-salads-appetizers" aria-controls="soups-salads-appetizers" role="tab" data-toggle="tab" class="icon icon-home"><span>Sopa-Ensaladas-Botanas</span></a>
+                    <a href="#appetizers" ng-change="change()" ng-model="bigData.appetizers" aria-controls="appetizers" role="tab" data-toggle="tab" class="icon icon-home"><span>Sopa-Ensaladas-Botanas</span></a>
                 </li>
                 <li>
-                    <a href="#organic-pastas" aria-controls="prganic-pastas" role="tab" data-toggle="tab">Especialidades Mexicanas</a>
+                    <a href="#pastas" n g-change="change()"ng-model="bigData.pastas" aria-controls="pastas" role="tab" data-toggle="tab">Especialidades Mexicanas</a>
                 </li>
                 <li>
-                    <a href="#pizza" aria-controls="pizza" role="tab" data-toggle="tab">Chimichangas</a>
+                    <a href="#pizza" ng-change="change()" ng-mdoel="bigData.pizza" aria-controls="pizza" role="tab" data-toggle="tab">Chimichangas</a>
                 </li>
                 <li>
-                    <a href="#entrees" aria-controls="entrees" role="tab" data-toggle="tab">Fajitas</a>
+                    <a href="#entrees" ng-change="change()" ng-model="bigData.entrees" aria-controls="entrees" role="tab" data-toggle="tab">Fajitas</a>
                 </li>
                 <li>
-                    <a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Pollo Borracha</a>
+                    <a href="#desserts" ng-change="change()" ng-model="bigData.desserts" aria-controls="desserts" role="tab" data-toggle="tab">Pollo Borracha</a>
                 </li>
             </ul>
 
             <!-- Menu Tab panes -->
             <div class="tab-content">
-                <div class="tab-pane active fade in" id="soups-salads-appetizers">
+                <div class="tab-pane active fade in" id="appetizers">
                     <div class="row">
                         <div class="menu-group">
                             <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
@@ -134,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade " id="organic-pastas">
+                <div class="tab-pane fade " id="pastas">
                     <div class="row">
                         <div class="menu-group">
                             <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
