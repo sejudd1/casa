@@ -1,17 +1,12 @@
-angular.module('casaApp', ['ui.bootstrap']).controller('OurMenuController', function($scope) {
+angular.module('OurMenuCtrl', []).controller('OurMenuCtrl', ['$scope' function($scope) {
 	
-	$scope.tagline = 'Authentic Sonoran Style Mexican Food';
-	$scope.bigData = {};
-
-	$scope.bigData.appetizers = false;
-	$scope.bigData.pasta = false;
-	$scope.bigData.pizza = false;
-	$scope.bigData.entrees = false;
-	$scope.bigData.desserts = false;
-
-	$scope.change = function () {
-		console.log($scope.bigData)
+		$scope.pasta 	  	= false;
+		$scope.pizza 	  	= false;
+		$scope.entrees	  	= false;
+		$scope.appetizers   = false;
+		$scope.changeMenu = function() {
+			$scope.appetizers = !$scope.appetizers;
+		};
 	};
-
 	
-});
+}]);
