@@ -17,7 +17,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
         .when('/our-menu', {
             templateUrl: 'views/our-menu.html',
-            controller: 'OurMenuCntrl as OurMenuCtrl'
+            controller: 'OurMenuCtrl as OurMenuCtrl'
         })
 
         .when('/gallery', {
@@ -40,10 +40,16 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         .when('/users', {
             templateUrl: 'views/user.html',
             controller: 'UserController'
-        });
+        })
+        
+        // otherwise({
+        // redirectTo: '/home'
+
+        // });
 
 
 
     $locationProvider.html5Mode(true);
+    // $locationProvider.otherwise('/home');
 
 }]);
