@@ -1,55 +1,70 @@
 
 // public/js/appRoutes.js
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+angular.module('casaApp', []).config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
 
-    $routeProvider
+ 
 
+    $stateProvider
         // home page
-        .when('/', {
+        .state({
+            name: 'home',
+            url: '/',
             templateUrl: 'views/home.html',
-            controller: 'MainController'
+            controller: 'HomeCtrl'
         })
-
-        .when('/about', {
+        //about page
+        .state({
+            name: 'about',
+            url: '/about',
             templateUrl: 'views/about.html',
-            controller: 'AboutController'
+            controller: 'AboutCtrl'
         })
-
-        .when('/our-menu', {
+        //our-menu page
+        .state({
+            name: 'our-menu',
+            url: '/our-menu',
             templateUrl: 'views/our-menu.html',
-            controller: 'OurMenuCtrl as OurMenuCtrl'
+            controller: 'OurMenuCtrl'
         })
-
-        .when('/gallery', {
+        //gallery
+        .state({
+            name: 'gallery',
+            url: '/gallery',
             templateUrl: 'views/gallery.html',
-            controller: 'GalleryController'
+            controller: 'GalleryCtrl'
         })
-
-        .when('/contact', {
+        //contact
+        .state({
+            name: 'contact',
+            url: '/contact',
             templateUrl: 'views/contact.html',
-            controller: 'ContactController'
+            controller: 'ContactCtrl'
         })
-
-        .when('/reservations', {
+        //reservation
+        .state({
+            name: 'reservation',
+            url: '/reservation',
             templateUrl: 'views/reservation.html',
-            controller: 'ReservationController'
+            controller: 'ReservationCtrl'
         })
 
 
         // admin page that will use the UserController
-        .when('/users', {
+        .state({
+            name: 'user',
+            url: '/user',
             templateUrl: 'views/user.html',
             controller: 'UserController'
         })
         
-        // otherwise({
-        // redirectTo: '/home'
+        otherwise({
+        redirectTo: '/home'
 
-        // });
+        });
 
 
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
     // $locationProvider.otherwise('/home');
 
 }]);

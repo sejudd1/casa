@@ -71,6 +71,8 @@ h2 {
 
 
 
+
+
 /* Font icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -336,17 +338,28 @@ h2 {
     text-align: center;
 }
 
+#home h1 {
+    font-size: 85px;
+}
+
 #home h2 {
     font-size: 70px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.homeLogo img {
-    width: 40px;
-    height: 40px;
-    margin-right: auto;
-    margin-left: auto;
+
+img#homeLogo.cdrLogo {
+
+    backface-visibility: hidden !important; 
+    position: absolute !important; 
+    left: 610px !important;
+    top: -120px !important;
+    max-width: 100% !important; 
+    z-index: 1 !important;
+    height: 150px !important;
+    width: 150px !important;
+
 }
 
 .slides .btn-primary{
@@ -375,7 +388,7 @@ h2 {
     padding-top: 20px;
 }
 
-.video-overlay {
+/*.video-overlay {
     background: #000 url( images/brilliant.png );
     bottom: 0;
     left: 0;
@@ -854,12 +867,29 @@ footer p {
     .pushy-active #hamburger {
         right: 10px;
     }
+
+    img#homeLogo.cdrLogo {
+        left: 200px !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+
+    }
 }
 
 @media only screen and (max-width: 640px)  {
 #home h2{
     font-size: 46px;
     }
+
+    img#homeLogo.cdrLogo{
+        left: 230px !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+
+    }
+
 }
 
 @media only screen and (max-width: 768px)  {
@@ -868,11 +898,27 @@ footer p {
     margin:0 0 30px 0;
     width:100%;
     }
+
+    img#homeLogo.cdrLogo{
+        left: 290px !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+
+    }
 }
 
 @media only screen and (max-width: 990px)  {
    .history{
    min-height: 100%;
+    }
+
+    img#homeLogo.cdrLogo{
+        left: 400px !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+
     }
 }
 
@@ -880,11 +926,36 @@ footer p {
     .container {
         max-width: 100%;
     }
+
+    img#homeLogo.cdrLogo {
+        left: 520px !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    img#homeLogo.cdrLogo {
+        left: 610px !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
 }
 
 @media only screen and (max-width: 349px)  {
    .close-btn{
    display:block !important;
+    }
+
+    img#homeLogo.cdrLogo {
+        left: 200px !important;
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
+
     }
 }
 

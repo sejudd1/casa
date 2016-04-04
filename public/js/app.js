@@ -1,12 +1,14 @@
 // Set up the Angular app to use all of our components. 
 //We will use dependency injection and set up our Angular application.
 angular.module('casaApp', [
-	'ngRoute', 
+	// 'ngRoute', 
 	'appRoutes', 
 	'MainCtrl', 
 	'UserCtrl',
-	// 'OurMenuCtrl', 
-	'UserService',
+	'ContactCtrl',
+	'HomeCtrl',
+	'OurMenuCtrl'
+	// 'GalleryCtrl',
+	// 'UserService',
 	]
-);
-
+)

@@ -12,9 +12,9 @@
 <meta name="author" content="">
 
 <!-- CSS --><!-- Bootstrap (Framework) -->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" /> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/assets/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
 <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat'>
 
@@ -26,10 +26,10 @@
 <link href='js/simplelightbox/simplelightbox.css' rel='stylesheet' type='text/css'>
 
 <!-- Timepicker -->
-<link rel="stylesheet" href="js/jquery-timepicker/jquery.timepicker.css">
+<!-- <link rel="stylesheet" href="js/jquery-timepicker/jquery.timepicker.css"> -->
 
 <!-- Datepicker -->
-<link rel="stylesheet" href="js/bootstrap-datepicker/bootstrap-datepicker.css">
+<!-- <link rel="stylesheet" href="js/bootstrap-datepicker/bootstrap-datepicker.css"> -->
 
 <!-- Masonry grid Layout -->
 <link rel="stylesheet" href="js/jQuery-flexImages/jquery.flex-images.css">
@@ -48,27 +48,30 @@
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
-<script src="/components/jquery/jquery.js"></script>
-<script src="/components/angular/angular.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4osadv5i4mC0Xpk5SsKjm9jQYelk09NI"></script>
+<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
+<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<!-- <script src="/components/angular/angular.js"></script>
+ --><!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRqCHP6PA4jCiRSIlhaHeGsG5ZfubqV7s"></script>
 
 
 <!-- ANGULAR CUSTOM -->
+<script src="js/app.js"></script>
+<script src="js/appRoutes.js"></script>
 <script src="js/controllers/MainCtrl.js"></script>
+<script src="js/controllers/HomeCtrl.js"></script>
 <script src="js/controllers/OurMenuCtrl.js"></script>
 <script src="js/controllers/ReservationCtrl.js"></script>
 <script src="js/controllers/ContactCtrl.js"></script>
 <script src="js/controllers/UserCtrl.js"></script>
 <script src="js/services/UserService.js"></script>
-<script src="js/appRoutes.js"></script>
-<script src="js/app.js"></script>
+
+
 
 </head>
 
-<body ng-app="casaApp" ng-controller="UserController">
+<body ng-app="casaApp">
     <!-- Preloader
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div id="preloader">
@@ -90,7 +93,7 @@
                 <!-- <li><a href="#blog"><i class="blog"></i>Blog</a></li> -->
                 <li><a href="#reservations"><i class="reservations"></i>Reservations</a></li>
                 <li><a href="#contact"><i class="contact"></i>Contact</a></li>
-                <li><a href="/users"><i class="admin"></i>ADMIN</a></li>
+                <!-- <li><a href="/users"><i class="admin"></i>ADMIN</a></li> -->
             </ul>
 
             <div class="social clearfix">
@@ -152,10 +155,10 @@
 <script src="js/simplelightbox/simple-lightbox.min.js"></script>
 
 <!-- Datepicker -->
-<script src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<!-- <script src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
 
 <!-- Timepicker -->
-<script src="js/jquery-timepicker/jquery.timepicker.min.js"></script>
+<!-- <script src="js/jquery-timepicker/jquery.timepicker.min.js"></script> -->
 
 <!-- Masonry grid Layout -->
 <script src="js/jQuery-flexImages/jquery.flex-images.min.js"></script>
@@ -166,11 +169,8 @@
 <!-- Smooth one page scroll -->
 <script src="js/jquery-one-page-nav/jquery.nav.js"></script>
 
-<!-- Google Map -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
 <!-- plugins -->
-<script src="js/main.js"></script>
+<!-- <script src="js/main.js"></script> -->
 
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
